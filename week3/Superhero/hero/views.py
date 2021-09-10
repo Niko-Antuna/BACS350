@@ -14,3 +14,6 @@ class IronManView(TemplateView):
 
 class BlackWidowView(TemplateView):
     template_name = 'black_widow.html'
+
+class HomeView(TemplateView):
+    template_name = 'home.html'
