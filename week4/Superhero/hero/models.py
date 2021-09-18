@@ -5,5 +5,5 @@ class Hero (models.Model):
     description = models.TextField()
     image = models.CharField(max_length=200)
 
-    def __str__(self) -> str:
-        return super().__str__(f'Name {self.name}')
+    def __str__(self):
+        return f'{self.name} - Description: {self.description}'
