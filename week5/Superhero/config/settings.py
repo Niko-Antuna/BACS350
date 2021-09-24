@@ -120,7 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "/Users/nikoantuna/Documents/Intermediate Web Dev/BACS350/week4/Superhero/static"
+STATIC_ROOT = "/Users/nikoantuna/Documents/Intermediate Web Dev/BACS350/week5/Superhero/static"
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
