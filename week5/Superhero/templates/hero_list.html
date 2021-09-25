@@ -10,19 +10,17 @@
 
 {% extends 'superhero_theme.html' %}
 {% block content %}
-<h1>Superhero Gallery</h1>
-<ul>
-    {% for hero in object_list %}
-    <li>
-        <h2>{{ hero.name }}</h2>
-        <p>{{ hero.description }}</p>
-        <p><img src="{{ hero.image }}" alt="{{ hero.name}}" width="30%"></p>
-        <p>
-            <a class="btn btn-light" href="{{ hero.pk }}">{{ hero.name }}</a>
-        </p>
-    </li>
-    {% endfor %}
-</ul>
+<body>
+    <ul>
+        {% for hero in object_list %}
+        <li>
+            <h2>{{ hero.name }}</h2>
+            <p>{{ hero.description }}</p>
+            <p><img src="{{ hero.image }}" alt="{{ hero.name}}" width="30%"></p>
+            <p><a class="btn btn-light" href="{{ hero.pk }}">{{ hero.name }}</a></p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
 {% endblock content %}
-
 </html>
