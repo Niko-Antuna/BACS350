@@ -37,3 +37,9 @@ class HeroDeleteView(LoginRequiredMixin, DeleteView):
     model = Hero
     template_name = 'hero_delete.html'
     success_url = reverse_lazy('hero_list')
+
+
+def get_context_data(self, **kwargs):
+    hero_id = kwargs['pk']
+    hero = Hero.objects.get(pk=hero_id)
+    return {'hero': Hero.objects.get(pk=hero_id)}
