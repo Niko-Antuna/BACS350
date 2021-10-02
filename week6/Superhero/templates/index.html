@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superhero News</title>
+    <title>Superhero Index</title>
 </head>
 
 {% extends 'superhero_theme.html' %}
 {% block content %}
 
 <body>
-    <img src="/static/images/marvel.jpg" alt="Marvel Heros">
-    <p><a class="btn btn-light m-3" href="/hero/">List of Heros</a></p>
-    <p><a class="btn btn-light" href="/admin/">Admin Views for Superhero</a></p>
+    <div class="text-center">
+        <img src="/static/images/marvel.jpg" alt="Marvel Heros">
+        <p><a class="btn btn-light m-3" href="/hero/">List of Heros</a></p>
+        <p><a class="btn btn-light" href="/admin/">Admin Views for Superhero</a></p>
+    </div>
 </body>
+
 {% endblock content %}
 
 </html>
