@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Index</title>
+</head>
+
+{% extends 'superhero_theme.html' %}
+{% block content %}
+
+<body>
+    <div class="text-center">
+        {% block header %}
+        {% include '_header.html' %}
+        {% endblock header %}
+        <p></p><a class="btn btn-light mt-1" href="/hero/">List of Heros</a></p>
+        <p><a href="/accounts/" class="btn btn-light mt-1">Users</a></p>
+    </div>
+</body>
+
+{% block footer %}
+{% include '_footer.html' %}
+{% endblock footer %}
+
+{% endblock content %}
+
+
+</html>
