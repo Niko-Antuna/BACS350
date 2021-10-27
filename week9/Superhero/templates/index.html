@@ -16,9 +16,20 @@
         {% block header %}
         {% include '_header.html' %}
         {% endblock header %}
-        <p></p><a class="btn btn-light mt-1" href="/hero/">List of Heros</a></p>
-        <p><a href="/accounts/" class="btn btn-light mt-1">Users</a></p>
     </div>
+
+    <div class="row justify-content-center">
+        <div class="col col-lg-2">
+            <p><a class="btn btn-primary mt-4" href="/hero/">Heros</a></p>
+        </div>
+        <div class="col col-lg-2">
+            <p><a href="/accounts/" class="btn btn-warning mt-4">Users</a></p>
+        </div>
+        <div class="col col-lg-2">
+            <p><a class="btn btn-success mt-4" href="/chapter/">Articles</a></p>
+        </div>
+    </div>
+
 </body>
 
 {% block footer %}
