@@ -2,6 +2,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, DeleteView, DetailView, ListView, RedirectView, UpdateView
+from django.views.generic.base import TemplateView
 from markdown import markdown
 
 from .models import Chapter
@@ -26,6 +27,7 @@ class ChapterDetailView(DetailView):
     def get_context_data(self, **kwargs):
         kwargs = super().get_context_data(**kwargs)
         chapter = kwargs['object']
+        chapter.markdown = open('Documents/Leverage/01.md').read()
         chapter.html = markdown(chapter.markdown)
         chapter.save()
         return kwargs

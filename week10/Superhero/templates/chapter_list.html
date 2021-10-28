@@ -15,7 +15,7 @@
 
         {% for chapter in object_list %}
         <tr>
-            <td>{{ chapter.book }}</td>
+            <td>{{ chapter.hero }}</td>
             <td><a class="text-light" href="{{ chapter.pk }}">Article {{ chapter.order }} - {{ chapter.title }}</a></td>
             <td><a class="text-light" href="{{ chapter.pk }}/">Edit</a></td>
             <td><a class="text-light" href="{{ chapter.pk }}/delete">Delete</a></td>
@@ -29,7 +29,4 @@
     </p>
 
 </div>
-
-
-
 {% endblock content %}
