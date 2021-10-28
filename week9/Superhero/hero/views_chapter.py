@@ -26,7 +26,6 @@ class ChapterDetailView(DetailView):
     def get_context_data(self, **kwargs):
         kwargs = super().get_context_data(**kwargs)
         chapter = kwargs['object']
-        chapter.markdown = open('Documents/Leverage/01.md').read()
         chapter.html = markdown(chapter.markdown)
         chapter.save()
         return kwargs
