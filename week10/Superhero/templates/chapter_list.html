@@ -7,7 +7,6 @@
 
     <table class="table table-hover table-bordered table-dark">
         <tr class="text-light btn-success">
-            <th>Hero</th>
             <th>Article</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -15,7 +14,6 @@
 
         {% for chapter in object_list %}
         <tr>
-            <td>{{ chapter.hero }}</td>
             <td><a class="text-light" href="{{ chapter.pk }}">Article {{ chapter.order }} - {{ chapter.title }}</a></td>
             <td><a class="text-light" href="{{ chapter.pk }}/">Edit</a></td>
             <td><a class="text-light" href="{{ chapter.pk }}/delete">Delete</a></td>
@@ -29,4 +27,7 @@
     </p>
 
 </div>
+
+
+
 {% endblock content %}

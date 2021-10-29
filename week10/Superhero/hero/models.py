@@ -18,7 +18,7 @@ class Hero (models.Model):
 
 
 class Chapter(models.Model):
-    book = models.CharField(max_length=200, default="Leverage Principle")
+    book = models.CharField(max_length=200, default="Default")
     # book = models.ForeignKey(Book, on_delete=models.CASCADE)
     order = models.IntegerField()
     title = models.CharField(max_length=200)
