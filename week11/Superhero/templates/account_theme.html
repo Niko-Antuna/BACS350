@@ -13,53 +13,12 @@
     <link href="/static/style.css" rel="stylesheet" s>
 </head>
 
-<body>
-
-
+<body class="bg-secondary">
     {% block menu %}
-
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-
-            <a class="navbar-brand" href="{% url 'home' %}">User Authentication</a>
-
-            <ul class="navbar-nav text-light ml-auto">
-
-                {% if user.is_authenticated %}
-
-                <li class="nav-item">
-                    Hello {{ user.username }} <a class="nav-link" href="{% url 'logout' %}">Log out</a>
-                </li>
-
-                {% else %}
-
-                <li class="nav-item">
-                    You are not logged in.
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %}">Log In</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'signup' %}">Sign Up</a>
-                </li>
-
-                {% endif %}
-
-            </ul>
-        </div>
-
-    </nav>
-
+    {% include '_navbar.html' %}
     {% endblock menu %}
 
-
-
     {% block header %}
-    <header>
-        <h1>User Verification</h1>
-    </header>
     {% endblock header %}
 
 
