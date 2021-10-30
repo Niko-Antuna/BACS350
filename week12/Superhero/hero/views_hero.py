@@ -5,6 +5,10 @@ from django.views.generic import CreateView, DeleteView, DetailView, ListView, R
 from .models import Hero
 
 
+class HeroView(RedirectView):
+    url = '/hero/'
+
+
 class IndexView(TemplateView):
     template_name = 'index.html'
 
