@@ -8,6 +8,10 @@ from markdown import markdown
 from .models import Chapter
 
 
+class ChapterView(RedirectView):
+    url = '/chapter/'
+
+
 class ChapterListView(ListView):
     template_name = 'chapter_list.html'
     model = Chapter
