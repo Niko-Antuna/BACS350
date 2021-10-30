@@ -1,4 +1,3 @@
-
 from django.views.generic import RedirectView
 from django.urls.conf import include, include
 from django.contrib import admin
