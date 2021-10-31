@@ -10,13 +10,13 @@
             <th>Delete</th>
         </tr>
 
-        {% for chapter in object_list %}
+
         <tr>
             <td><a class="text-light" href="{{ chapter.pk }}">Article {{ chapter.order }} - {{ chapter.title }}</a></td>
             <td><a class="text-light" href="{{ chapter.pk }}/">Edit</a></td>
             <td><a class="text-light" href="{{ chapter.pk }}/delete">Delete</a></td>
         </tr>
-        {% endfor %}
+
     </table>
 
 
